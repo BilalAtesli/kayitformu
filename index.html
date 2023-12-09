@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kayit Formu</title>
+	<link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+	<style>
+		body {
+			height: 100vh;
+			background-image: url(bg.jpg);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			overflow: hidden;
+		}
+
+		.form {
+			margin-top: 30px;
+			margin-left: auto;
+			margin-right: auto;
+			font-family: 'Nunito', sans-serif;
+			background-color: #F2F4F6;
+			width: 350px;
+			padding: 10px;
+			border-radius: 10px;
+			-webkit-box-shadow: 2px 3px 34px 13px rgba(0, 0, 0, 0.75);
+			-moz-box-shadow: 2px 3px 34px 13px rgba(0, 0, 0, 0.75);
+			box-shadow: 2px 3px 34px 13px rgba(0, 0, 0, 0.75);
+
+		}
+
+		.baslik {
+			text-align: center;
+
+		}
+
+		.form-item {
+			padding: 5px;
+		}
+
+		.input {
+
+			margin-bottom: 10px;
+		}
+
+		.input input {
+			background-color: #E6EBEC;
+			border: none;
+			outline: none;
+			height: 30px;
+			width: 340px;
+			border-radius: 3px;
+			padding-left: 5px;
+			font-family: 'Nunito', sans-serif;
+
+		}
+
+		.select {
+			border: none;
+			background-color: #E6EBEC;
+			padding: 5px;
+			border-radius: 3px;
+			margin-top: 5px;
+			outline: none;
+			font-family: 'Nunito', sans-serif;
+			color: #757575;
+
+
+		}
+
+		.btn {
+			font-family: 'Nunito', sans-serif;
+			text-align: center;
+			width: 100px;
+			padding: 3px;
+			border-radius: 5px;
+			border: none;
+			background-color: #5FCF80;
+			color: white;
+			font-weight: bold;
+			letter-spacing: 1px;
+			transition: all .5s ease;
+		}
+
+		.btn:hover {
+			color: black;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<form action="">
+
+		<div class="form">
+			<div class="baslik">
+				<h2>Kayıt Formu</h2>
+			</div>
+			<!-- input Type text bolumu -->
+			<div class="form-item">
+				<span>
+					İsim :
+				</span>
+			</div>
+			<div class="input">
+				<input type="text" placeholder="İsminizi giriniz">
+			</div>
+
+			<div class="form-item">
+				<span>
+					Soyisim :
+				</span>
+			</div>
+			<div class="input">
+				<input type="text" placeholder="Soyisminizi giriniz">
+			</div>
+
+			<div class="form-item">
+				<span>
+					Email :
+				</span>
+			</div>
+			<div class="input">
+				<input type="email" placeholder="Email giriniz">
+			</div>
+
+
+
+			<div class="form-item">
+				<span>
+					Şifre :
+				</span>
+			</div>
+			<div class="input">
+				<input type="text" placeholder="Şifrenizi giriniz">
+			</div>
+
+			<!-- input Type text bolumu end -->
+
+			<!-- Radio Bolumu -->
+			<div class="form-item">
+				<span>
+					Cinsiyet :
+				</span>
+			</div>
+			<div>
+				<input type="radio" name="Cinsiyet" value="Kadin"><span>Erkek</span>
+				<br>
+				<input type="radio" name="Cinsiyet" value="Erkek"><span>Kadın</span>
+			</div>
+			<!-- Radio Bolumu end -->
+
+			<!-- select bolumu -->
+			<div class="form-item">
+				<div>
+					<span>
+						Şehir :
+					</span>
+				</div>
+				<select class="select" name="" id="">
+					<option value="" selected>Şehir Seçiniz</option>
+					<option value="">İzmir</option>
+					<option value="">Ankara</option>
+					<option value="">İstanbul</option>
+				</select>
+			</div>
+			<!-- select bolumu end -->
+
+			<!-- Checkbox bolumu -->
+			<div class="form-item">
+				<div>
+					<span>Hobiler :</span>
+				</div>
+				<input type="checkbox" name="" id=""><span>Futbol</span>
+				<input type="checkbox" name="" id=""><span>Basketbol</span>
+				<input type="checkbox" name="" id=""><span>Satranç</span>
+			</div>
+			<!-- Checkbox bolumu end -->
+
+			<!-- submit bolumu -->
+			<div class="form-item" style="text-align: center;">
+				<input class="btn" type="submit" value="Gönder">
+			</div>
+			<!-- submit bolumu end -->
+
+		</div>
+	</form>
+</body>
+
+</html>
